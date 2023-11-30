@@ -1,8 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 
 function Search({handleFilter}) {
-
-  // const [search, setSearch] = useState('')
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -16,7 +14,6 @@ function Search({handleFilter}) {
         type="text"
         id="search"
         placeholder="search free stuff"
-        // value={search}
         onChange={(e) => handleFilter(e.target.value)}
       />
       <button type="submit">🔍</button>
